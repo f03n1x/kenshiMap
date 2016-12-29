@@ -45,8 +45,10 @@ public class MainActivity extends AppCompatActivity {
 
         //imageView.setOrientation(SubsamplingScaleImageView.ORIENTATION_90);
 
-        imageView.setImage(ImageSource.asset("m_map.png"));
+        imageView.setImage(ImageSource.resource(R.drawable.kenshi_map_placeholder));
 
+       // imageView.setScaleX(10.0f);
+        //imageView.setScaleY(10.0f);
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
